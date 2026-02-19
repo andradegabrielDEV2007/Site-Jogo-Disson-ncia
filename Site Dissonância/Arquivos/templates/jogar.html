@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="icon" href="/Arquivos/static/imagens/LOGO.png" type="image/png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Dissonância</title>
+
+    <link rel="stylesheet" href="/Arquivos/static/style.css">
+    <link rel="stylesheet" href="/Arquivos/static/header.css">
+    <link rel="stylesheet" href="/Arquivos/static/home.css">
+    <link rel="stylesheet" href="/Arquivos/static/caixas.css">
+    <link rel="stylesheet" href="/Arquivos/static/login.css">
+    <link rel="stylesheet" href="/Arquivos/static/footer.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='caixas.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css')}}">
+
+    <style>
+        
+        .df{
+            width: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    
+<!-- Início do Header -->
+     <header>
+
+      
+        <!-- Início do Nav -->
+        <nav id="navbar">
+            <!-- Div logo  -->
+             <div id="logo"> <span><a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='imagens/LOGO.png') }}" alt=""></a></span></div>
+             <!-- Fim da div logo -->
+ 
+             <div class="lista-nav">
+
+                 <ul id="nav_list">
+                     <li class="nav-item active"><a href="{{ url_for('home') }}">Início</a></li>
+                     <li class="nav-item"><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                     <li class="nav-item"><a href="{{ url_for('equipe') }}">Equipe</a></li>
+                     <li class="nav-item"><a href="{{ url_for('faq') }}">Faq</a></li>
+                     <li class="nav-item"><a href="#footer">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="df"></div>
+                
+               
+
+              
+                
+        </nav>
+     </header>
+<!-- Fim do Header -->
+
+<!-- Início do main -->
+     <main>
+
+        <!-- Início da section login -->
+        <section id="login">
+            <div class="div-login">
+
+                <div class="conteudo-aviso">
+
+                    <!-- Início da div avisos-->
+                    <div class="Aviso">
+                        <div class="Texto-dissonancia">
+                            <h2>Dissonância</h2>
+                        </div>
+                    <p>Por favor, preencha as informações abaixo para receber o jogo em seu email.</p>
+                </div>
+                <!-- Fim da div avisos -->
+                
+                <div class="div-form">
+                    <!-- Início do form -->
+                    <form action="" method="post">
+                        
+                        <label for="user">Nome completo:</label><br>
+                        <input  class="text" type="text" name="nomeJogar" id="nome" placeholder="Digite seu nome..."><br>
+                        
+                        <label for="email">Email:</label><br>
+                        <input class="text" type="email" name="emailJogar" id="email" placeholder="Digite seu email..."><br>
+                        
+                        <button class="Receber-btn" type="submit">Receber</button>
+                        
+                    </form>
+                    <!-- Fim do form -->
+                </div>
+            </div>
+            </div>
+
+        </section>
+        <!-- Fim da section login -->
+
+    
+     </main>
+     <!-- Fim da main -->
+
+      <!-- Início do footer -->
+     <footer id="footer">
+        <!-- Início da div conteudo-footer -->
+        <div class="conteudo-footer">
+           
+              <div id="logo"> <span><a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='imagens/LOGO.png') }}" alt=""></a></span>
+                <p class="paragrafo-footer"> Dissonância — Um jogo sobre exploração e narrativa imersiva</p>
+            </div>
+                
+
+                <div class="texto-footer">
+                    <h3 class="titulo-texto-footer">Empresa</h3>
+                    <ul>
+                        <li><a href="">Quem somos?</a></li>
+                        <li><a href="">Política de privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div></div>
+                <div></div>
+
+                 <div class="texto-footer">
+                    <h3 class="titulo-texto-footer">Contato</h3>
+                    <ul>
+                        <li><p>WhatsApp: <a href="https://wa.me/5581997377661" target="_blank">(81) 99737-7661</a></p>
+</li>
+                        <li><p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gabriel.andrade@nave.org.br&su=Contato%20pelo%20site&body=Olá%20Gabriel,%20gostaria%20de%20saber%20mais%20sobre..." target="_blank">
+                            gabriel.andrade@nave.org.br
+</a></p></li>
+                    </ul>
+                </div>
+
+                <div></div>
+          
+        </div>
+        <!-- Fim da div conteudo-footer -->
+     </footer>
+     <!-- Fim do footer --> 
+</body>
+</html>

@@ -1,0 +1,35 @@
+.Texto-video
+{
+    display: flex;
+    gap: 20px;
+  
+    
+}
+
+.quadrado-vermelho{
+    border-radius: 10px;
+    background-color: rgb(164, 23, 4);
+    align-items: center;
+    padding: 40px 50px;
+    width: 50vw;
+   
+}
+
+.Texto-quadrado-sobre{
+    color: white;
+  
+}
+
+.Título-Texto-Sobre{
+    margin-bottom: 10px;
+}
+
+.Video-Sobre{
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 6px rgba(165, 69, 42);
+    transition: .8s;
+}
+
+.Video-Sobre:hover{
+    transform: scale(1.05);
+}

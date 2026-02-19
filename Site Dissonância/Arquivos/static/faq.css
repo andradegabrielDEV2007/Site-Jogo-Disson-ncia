@@ -1,0 +1,70 @@
+main{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.conteudo-faq{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; /* padding menor pra não inflar a div */
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px #9d1515;
+    padding: 10%;
+    width: 80vw;    
+    max-width: 900px;
+    height: 50vh; 
+    overflow-y: auto; /* scroll vertical se passar do limite */
+    
+}
+
+.conteudo-faq details{
+align-self: center;
+color: rgba(165, 69, 42);
+margin-bottom: 10px;
+width: 100%;
+margin-left: 400px;
+cursor: pointer;
+}
+
+.conteudo-faq details summary{
+    color: #9d1515;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+
+
+.titulo-faq{
+    
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #9d1515;
+    padding: 15px 0;
+    border-bottom: 2px solid rgb(165, 69, 42); 
+}
+
+.form-faq label{
+color: #9d1515;
+font-weight: bold;
+
+}
+
+.form-faq input{
+    border-style: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    background-color: rgba(191, 93, 66, 0.381); 
+    
+}
+
+.form-faq ::placeholder{
+    color: aliceblue;
+
+}

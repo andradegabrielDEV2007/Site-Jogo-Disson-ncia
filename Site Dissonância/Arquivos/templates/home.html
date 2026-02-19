@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="icon" href="{{ url_for('static', filename='imagens/LOGO.png') }}" type="image/png">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dissonância</title>
+    <link rel="stylesheet" href="/Arquivos/static/style.css">
+    <link rel="stylesheet" href="/Arquivos/static/header.css">
+    <link rel="stylesheet" href="/Arquivos/static/home.css">
+    <link rel="stylesheet" href="/Arquivos/static/caixas.css">
+    <link rel="stylesheet" href="/Arquivos/static/footer.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='caixas.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css')}}">
+</head>
+<body>
+
+    <!-- Início do Header -->
+     <header>
+
+        <!-- Início do Nav -->
+        <nav id="navbar">
+            <!-- Div logo  -->
+             <div id="logo"> <span><a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='imagens/LOGO.png') }}" alt=""></a></span></div>
+             <!-- Fim da div logo -->
+
+             <ul id="nav_list">
+                <li class="nav-item active"><a href="{{ url_for('home') }}">Início</a></li>
+                <li class="nav-item"><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                <li class="nav-item"><a href="{{ url_for('equipe') }}">Equipe</a></li>
+                <li class="nav-item"><a href="{{ url_for('faq') }}">Faq</a></li>
+                <li class="nav-item"><a href="#footer">Contato</a></li>
+             </ul>
+
+             <a href="{{ url_for('jogar') }}">
+
+                 <button class="btn-default">Jogar</button>
+                </div>
+            </a>
+                
+
+
+        </nav>
+     </header>
+
+     <!-- Início do main -->
+     <main id="content">
+
+        <!-- Início do home -->
+       <section id="home">
+
+        <!-- Início div CTA (Lado esquerdo) -->
+            <div id="cta">
+                    <h1 class="title">  
+                        O mistério vai te
+                        <span>surpreender</span>
+                    </h1>
+
+                    <p class="description">
+                        Dissonância é um jogo 3D de plataforma sombrio, onde o policial Aquino enfrenta a perda da filha em uma jornada entre medo e realidade..
+                    </p>
+
+                        <!-- Início div de botões de midia -->
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp">
+
+                    </i>
+                </a>
+
+                 <a href="">
+                    <i class="fa-brands fa-instagram">
+
+                    </i>
+                </a>
+
+                 <a href="">
+                    <i class="fa-brands fa-facebook">   
+                    </i>
+                </a>
+            </div>
+            <!-- Fim div de botões de midia -->
+
+            </div>
+            <!-- Fim div CTA (Lado esquerdo) -->
+
+        
+
+            <!-- Início div de banner (Lado direito) -->
+            <div id="banner">
+                <img src="{{ url_for('static', filename='imagens/fotoJogo.png') }}" alt="">
+            </div>
+
+             <!-- Fim div de banner (Lado direito) -->
+
+       </section>
+       <!-- Fim do home -->
+
+       <!-- card box -->
+
+        <div class="container">
+        
+        <h2 id="title-container">Mecânicas</h2>
+
+        <div class="equipe-grid">
+
+     
+                <div class="card">
+                    <h2>Imersão</h2>
+
+            <p>Entre em um universo envolvente, onde cada detalhe conta uma história.</p>
+            </div>
+            
+
+            
+
+                <div class="card">
+                    <h2>Desafios</h2>  
+                    
+                    <p>Enfrente obstáculos únicos que vão testar sua inteligência e estratégia.</p>
+                </div>
+            
+                
+
+
+                <div class="card">
+                    <h2>Mistérios</h2>
+                    
+                    <p>Mergulhe em um mundo repleto de mistérios e ponha suas habilidades investigativas em dia!</p>
+                </div>
+            
+        </div>
+
+     </main>
+
+     <!-- Fim do main -->
+
+     <!-- Início do footer -->
+     <footer id="footer">
+        <!-- Início da div conteudo-footer -->
+        <div class="conteudo-footer">
+           
+              <div id="logo"> <span><a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='imagens/LOGO.png') }}" alt=""></a></span>
+                <p class="paragrafo-footer"> Dissonância — Um jogo sobre exploração e narrativa imersiva</p>
+            </div>
+                
+
+                <div class="texto-footer">
+                    <h3 class="titulo-texto-footer">Empresa</h3>
+                    <ul>
+                        <li><a href="">Quem somos?</a></li>
+                        <li><a href="">Política de privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div></div>
+                <div></div>
+
+                 <div class="texto-footer">
+                    <h3 class="titulo-texto-footer">Contato</h3>
+                    <ul>
+                        <li><p>WhatsApp: <a href="https://wa.me/5581997377661" target="_blank">(81) 99737-7661</a></p>
+</li>
+                        <li><p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gabriel.andrade@nave.org.br&su=Contato%20pelo%20site&body=Olá%20Gabriel,%20gostaria%20de%20saber%20mais%20sobre..." target="_blank">
+                            gabriel.andrade@nave.org.br
+</a></p></li>
+                    </ul>
+                </div>
+
+                <div></div>
+          
+        </div>
+        <!-- Fim da div conteudo-footer -->
+     </footer>
+     <!-- Fim do footer -->
+
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+.conteudo-footer
+{
+    display: flex;
+    background-color: rgb(165, 69, 42);
+    padding: 28px 8%;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px ;
+    border-radius: 2px;
+    align-items: end;
+    margin-top: auto;
+}
+
+main{
+    flex: 1;
+}
+
+html, body {
+  height: 100%;       /* ocupa a tela toda */
+  margin: 0;          /* remove espaço padrão */
+  display: flex;      
+  flex-direction: column;
+}
+
+
+.img-footer{
+    max-width: 20px;
+    height: 10px;
+}
+
+.paragrafo-footer{
+    color: white;
+    width: 50%;
+    font-size: small;
+}
+
+.texto-footer{
+    display: block;
+    color: white;
+    
+
+}
+
+.texto-footer ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.titulo-texto-footer{
+   font-weight: bold;
+    
+}

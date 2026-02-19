@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="icon" href="/Arquivos/static/imagens/LOGO.png" type="image/png">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dissonância</title>
+    <link rel="stylesheet" href="/Arquivos/static/style.css">
+    <link rel="stylesheet" href="/Arquivos/static/header.css">
+    <link rel="stylesheet" href="/Arquivos/static/home.css">
+    <link rel="stylesheet" href="/Arquivos/static/caixas.css">
+    <link rel="stylesheet" href="/Arquivos/static/footer.css">
+    <link rel="stylesheet" href="/Arquivos/static/equipe.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='caixas.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='equipe.css')}}">
+    
+</head>
+<body>
+
+    <!-- Início do Header -->
+     <header>
+
+        <!-- Início do Nav -->
+        <nav id="navbar">
+            <!-- Div logo  -->
+             <div id="logo"> <span><a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='imagens/LOGO.png') }}" alt=""></a></span></div>
+             <!-- Fim da div logo -->
+
+             <ul id="nav_list">
+                <li class="nav-item active"><a href="{{ url_for('home') }}">Início</a></li>
+                <li class="nav-item"><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                <li class="nav-item"><a href="{{ url_for('equipe') }}">Equipe</a></li>
+                <li class="nav-item"><a href="{{ url_for('faq') }}">Faq</a></li>
+                <li class="nav-item"><a href="#footer">Contato</a></li>
+             </ul>
+
+             <a href="{{ url_for('jogar') }}">
+
+                 <button class="btn-default">Jogar</button>
+                </div>
+            </a>
+                    
+
+
+        </nav>
+     </header>
+     <!-- Fim do header -->
+
+     <main>
+      
+        <section id="home-equipe">
+
+            <div class="img-equipe">
+                
+                <img src="{{ url_for('static', filename='imagens/FotoJOgo.jpg') }}" alt="">
+                
+            </div>
+            </section>
+
+             <!-- card box -->
+
+        <div class="container">
+        
+        <h2 class="titulo-container">Equipe Dissonância</h2>
+
+        <div class="equipe-grid">
+
+     
+                <div class="card">
+                    <h2>David Gomes</h2>
+
+            <p>Técnico em programação de jogos</p>
+            </div>
+            
+
+            
+
+                <div class="card">
+                    <h2>Emilly Gomes</h2>  
+                    
+                    <p>Técnica em programação de jogos</p>
+                </div>
+            
+                
+
+
+                <div class="card">
+                    <h2>Gabriel Andrade</h2>
+                    
+                    <p>Técnico em programação de jogos</p>
+                </div> 
+
+                <div class="card">
+                    <h2>Jorge Alves</h2>
+                    
+                    <p>Técnico em programação de jogos</p>
+                </div> 
+
+                <div class="card">
+                    <h2>Leandra Beatriz</h2>
+                    
+                    <p>Técnica em programação de jogos</p>
+                </div> 
+
+                <div class="card">
+                    <h2>Giovana Rodrigues</h2>
+                    
+                    <p>Técnica em Multimídia</p>
+                </div>  
+
+                
+                <div class="card">
+                    <h2>Isaac Neves</h2>
+                    
+                    <p>Técnico em Multimídia</p>
+                </div> 
+
+                <div class="card">
+                    <h2>Kamille Medeiros</h2>
+                    
+                    <p>Técnica em Multimídia</p>
+                </div> 
+
+                <div class="card">
+                    <h2>Maryana Silva</h2>
+                    
+                    <p>Técnica em Multimídia</p>
+                </div> <br> 
+
+                <div class="card">
+                    <h2>Tayná Santana</h2>
+                    
+                    <p>Técnica em Multimídia</p>
+                </div>  
+
+            
+        </div>
+            
+        
+
+        </main>
+
+       <!-- Início do footer -->
+     <footer id="footer">
+        <!-- Início da div conteudo-footer -->
+        <div class="conteudo-footer">
+           
+              <div id="logo"> <span><a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='imagens/LOGO.png') }}" alt=""></a></span>
+                <p class="paragrafo-footer"> Dissonância — Um jogo sobre exploração e narrativa imersiva</p>
+            </div>
+                
+
+                <div class="texto-footer">
+                    <h3 class="titulo-texto-footer">Empresa</h3>
+                    <ul>
+                        <li><a href="">Quem somos?</a></li>
+                        <li><a href="">Política de privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div></div>
+                <div></div>
+
+                 <div class="texto-footer">
+                    <h3 class="titulo-texto-footer">Contato</h3>
+                    <ul>
+                        <li><p>WhatsApp: <a href="https://wa.me/5581997377661" target="_blank">(81) 99737-7661</a></p>
+</li>
+                        <li><p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gabriel.andrade@nave.org.br&su=Contato%20pelo%20site&body=Olá%20Gabriel,%20gostaria%20de%20saber%20mais%20sobre..." target="_blank">
+                            gabriel.andrade@nave.org.br
+</a></p></li>
+                    </ul>
+                </div>
+
+                <div></div>
+          
+        </div>
+        <!-- Fim da div conteudo-footer -->
+     </footer>
+     <!-- Fim do footer -->
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+.div-login{
+    align-items: center;
+    justify-content: space-between;
+    padding: 180px 190px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px #9d1515;
+
+}
+
+.conteudo-aviso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Receber-btn{
+  background-color: #9d1515;
+  color: aliceblue;
+  border-style: none;
+  border-radius: 2px;
+  cursor: pointer;
+    
+}
+
+.Receber-btn:hover{
+    background-color: rgb(165, 69, 42);
+}
+
+.div-form{
+    margin-top: 4px;
+    
+}
+
+
+.text{
+    border-radius: 3px;
+    border-style: none;
+    padding: 10px 20px;
+    background-color: rgba(191, 93, 66, 0.381); 
+}
+
+.text::placeholder{
+    color: aliceblue;
+}
+
+.Texto-dissonancia{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #9d1515;
+    padding: 15px 0;
+    border-bottom: 2px solid rgb(165, 69, 42); 
+}
